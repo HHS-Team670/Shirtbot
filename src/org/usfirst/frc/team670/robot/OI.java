@@ -1,5 +1,9 @@
 package org.usfirst.frc.team670.robot;
 
+import java.awt.Color;
+
+import org.usfirst.frc.team670.robot.commands.Cancel;
+import org.usfirst.frc.team670.robot.commands.Color_Follower;
 import org.usfirst.frc.team670.robot.commands.Shoot;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -19,13 +23,17 @@ public class OI {
 	  Joystick left = new Joystick(RobotMap.leftJoy);
 	  Joystick right = new Joystick(RobotMap.rightJoy);
 	  Button shoot = new JoystickButton(left, 1);
+	  Button color_follower = new JoystickButton(left, 2);
+	  Button cancel = new JoystickButton(left, 3);
 
 	// There are a few additional built in buttons you can use. Additionally,
 	// by subclassing Button you can create custom triggers and bind those to
 	// commands the same as any other Button.
 
 	 public OI(){
-	 shoot.whenPressed(new Shoot());
+		 shoot.whenPressed(new Shoot());
+		 //color_follower.whenPressed(new Color_Follower(Color.RED));
+		 //cancel.whenPressed(new Cancel());
 	 
 	//// TRIGGERING COMMANDS WITH BUTTONS
 	// Once you have a button, it's trivial to bind it to a button in one of

@@ -11,10 +11,11 @@ import edu.wpi.first.wpilibj.Joystick;
 public class RobotMap {
 	// For example to map the left and right motors, you could define the
 	// following variables to use with your drivetrain subsystem.
-	 public static int leftMotor1 = 1;
-	 public static int rightMotor1 = 2;
-	 public static int leftMotor2 = 3;
-	 public static int rightMotor2 = 4;
+	 public static int leftMotor1 = 0;
+	 public static int rightMotor1 = 1;
+	 public static int leftMotor2 = 2;
+	 public static int rightMotor2 = 3;
+	 public static int shooter = 4;
 
 	 public static int leftJoy = 0;
 	 public static int rightJoy = 1;

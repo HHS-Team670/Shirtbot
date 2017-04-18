@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+import org.usfirst.frc.team670.robot.subsystems.Camera;
 import org.usfirst.frc.team670.robot.subsystems.DriveBase;
 import org.usfirst.frc.team670.robot.subsystems.Shooter;
 
@@ -21,6 +22,7 @@ import org.usfirst.frc.team670.robot.subsystems.Shooter;
 public class Robot extends IterativeRobot {
 
 	public static final DriveBase driveBase = new DriveBase();
+	//public static final Camera camera = new Camera();
 	public static final Shooter shooter = new Shooter();
 	public static OI oi;
 
@@ -34,6 +36,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		oi = new OI();
+		//camera.init();
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 	}
