@@ -3,7 +3,6 @@ package org.usfirst.frc.team670.robot;
 import java.awt.Color;
 
 import org.usfirst.frc.team670.robot.commands.Cancel;
-import org.usfirst.frc.team670.robot.commands.Color_Follower;
 import org.usfirst.frc.team670.robot.commands.Shoot;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -23,7 +22,6 @@ public class OI {
 	  Joystick left = new Joystick(RobotMap.leftJoy);
 	  Joystick right = new Joystick(RobotMap.rightJoy);
 	  Button shoot = new JoystickButton(left, 1);
-	  Button color_follower = new JoystickButton(left, 2);
 	  Button cancel = new JoystickButton(left, 3);
 
 	// There are a few additional built in buttons you can use. Additionally,
