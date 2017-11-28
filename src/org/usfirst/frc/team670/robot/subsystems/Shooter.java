@@ -13,23 +13,23 @@ public class Shooter extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
-	Relay relay;
+	Jaguar relay;
 	
 	public Shooter()
 	{
-		relay = new Relay(RobotMap.shooter);
+		relay = new Jaguar(RobotMap.shooter);
 	}
 	
 	public void shoot()
 	{
-		relay.set(Relay.Value.kOn);
+		relay.set(0.1);
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		relay.set(Relay.Value.kOff);
+		relay.set(0);
 	}
 	
     public void initDefaultCommand() {

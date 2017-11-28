@@ -26,10 +26,10 @@ public class DriveBase extends Subsystem {
 	
 	public void drive(double left, double right)
 	{
-		left1.set(left);
-		left2.set(-left);
-		right1.set(right);
-		right2.set(-right);
+		left1.set(-left);
+		left2.set(left);
+		right1.set(-right);
+		right2.set(right);
 	}
 
     public void initDefaultCommand() {
