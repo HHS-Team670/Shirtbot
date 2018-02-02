@@ -1,2 +1,3 @@
 # T-Shirt-Robot
-Shooting T-shirts, and inciting fun
+
+Code for shooting T-Shirts
